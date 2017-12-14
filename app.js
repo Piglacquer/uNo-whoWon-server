@@ -12,7 +12,7 @@ app.get("/", (request, response) => {
   response.json(data.dataSet);
 });
 
-app.post("/", (request, response) => {
+app.post("/toAPI", (request, response) => {
   response.json("post worked");
 });
 
