@@ -5,4 +5,4 @@ var dataSet = [{
 
 module.exports = {
   dataSet
-}
+};
