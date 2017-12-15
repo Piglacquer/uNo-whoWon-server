@@ -12,7 +12,7 @@ app.get("/", (request, response) => {
 });
 
 app.post("/", (request, response) => {
-  response.json(request);
+  response.json(request.body);
 });
 
 app.listen(process.env.PORT || 3000, () => {
