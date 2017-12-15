@@ -8,7 +8,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 app.get("/", (request, response) => {
-  response.json("GET worked");
+  response.json(response.dataSet[0].name);
 });
 
 app.post("/", (request, response) => {
