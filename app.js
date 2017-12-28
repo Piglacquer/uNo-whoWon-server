@@ -5,12 +5,19 @@ const bodyParser = require("body-parser")
 const data = require("./Data/data")
 const games = data.games
 const players = data.players
+const baseURL = "https://uno-who-won.herokuapp.com/"
 
 app.use(cors())
 app.use(bodyParser.json())
 
-app.get("/", (request, response) => {
+app.get("/scores.html", (request, response) => {
   response.json(players)
+  console.log(response)
+})
+
+app.get("/Games", (request, response) => {
+  response.json(games)
+  console.log(response)
 })
 
 app.post("/", (request, response) => {
@@ -20,3 +27,10 @@ app.post("/", (request, response) => {
 app.listen(process.env.PORT || 3000, () => {
   console.log('listening on port 3000')
 })
+
+// fetch(baseURL)
+//   .then(response => response.json())
+//   .then(response => {
+//     console.log(response)
+//   })
+//   .catch(err => console.log(err))
