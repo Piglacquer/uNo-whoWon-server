@@ -15,7 +15,7 @@ app.get("/scores.html", (request, response) => {
   console.log(response)
 })
 
-app.get("/Games", (request, response) => {
+app.get("/games", (request, response) => {
   response.json(games)
   console.log(response)
 })
