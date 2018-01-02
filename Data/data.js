@@ -1,15 +1,12 @@
 var games = [{
   gameId: 1,
-  gameWinnerId: 1,
-  numberofPlayers: 5
+  gameWinnerId: 1
 }, {
   gameId: 2,
-  gameWinnerId: 2,
-  numberofPlayers: 5
+  gameWinnerId: 2
 }, {
   gameId: 3,
-  gameWinnerId: 6,
-  numberofPlayers: 5
+  gameWinnerId: 6
 }]
 
 var players = [{

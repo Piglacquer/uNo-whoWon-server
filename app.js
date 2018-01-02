@@ -12,12 +12,10 @@ app.use(bodyParser.json())
 
 app.get("/scores.html", (request, response) => {
   response.json(players)
-  console.log(response)
 })
 
 app.get("/games", (request, response) => {
   response.json(games)
-  console.log(response)
 })
 
 app.post("/", (request, response) => {
