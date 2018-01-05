@@ -1,0 +1,14 @@
+{
+  "name": "data",
+  "version": "1.0.0",
+  "description": "",
+  "main": "data.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "me",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^4.1.0"
+  }
+}

@@ -2,17 +2,22 @@
   "name": "server",
   "version": "1.0.0",
   "description": "server side for uno-scorekeeper",
+  "directories": {
+    "test": "test"
+  },
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
     "start": "node app.js"
   },
   "author": "patrick biffle",
   "license": "ISC",
   "dependencies": {
+    "assert": "^1.4.1",
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
     "express": "^4.16.2",
+    "mocha": "^4.1.0",
     "nodemon": "^1.13.2"
   },
   "devDependencies": {}
